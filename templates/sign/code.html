@@ -1,0 +1,15 @@
+{% extends "flatpages/default.html" %}
+
+{% block content %}
+<h2> Завершение регистрации </h2>
+<form action="" method="post">
+  {% csrf_token %}
+  <label for="code_form">Введите пароль: </label>
+  <input
+    id="code_form"
+    type="text"
+    name="code_field"/>
+  <input type="submit" value="OK" />
+</form>
+
+{% endblock %}
